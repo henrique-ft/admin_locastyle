@@ -1113,7 +1113,8 @@
  .ls-theme-custom p a:not([class*="ls-btn"]),
  .ls-theme-custom .ls-breadcrumb a,
  .ls-theme-custom .hopscotch-bubble a {
-     color: #464646
+    color: #5a7f96;
+    text-decoration: underline;
  }
  
  .ls-theme-custom p a:not([class*="ls-btn"]):hover,
@@ -1507,7 +1508,8 @@
  }
  
  .ls-theme-custom .ls-table tbody a:not([class*="ls-btn"]) {
-     color: #656565
+    color: #5a7f96;
+    text-decoration: underline;
  }
  
  .ls-theme-custom .ls-table.ls-table-striped tbody tr:hover td {
