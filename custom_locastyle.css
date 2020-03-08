@@ -1,8 +1,4 @@
-/*! Locastyle version: 3.10.1*/
-
-
-/*! Locastyle version: 3.10.1*/
-
+/*! Custom Locastyle version: 3.10.1 by True Henrique */
 
 /*!
  * GRID by Bootstrap v3.1.1 (http://getbootstrap.com)
@@ -10,7 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 
- @import url(//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
+ @import url(///fonts.googleapis.com/css?family=Open+Sans:300,400,600,700);
  .container {
      margin-right: auto;
      margin-left: auto;
@@ -1003,12 +999,13 @@
  }
  
 .ls-sidebar .ls-sidebar-inner img {
-  width: 11em;
-  margin: 2.4em;
-  padding: 0.5em;
-  border: 3px solid #969696;
-  border-radius: 0.2em;
-  background-color: white;
+     width: 11em;
+     margin: 2.4em;
+     padding: 0.15em;
+     border: 1px solid #c5c5c5;
+     border-radius: 0.2em;
+     background-color: white;
+     box-shadow: 2px 2px 2px 2px #0000006e;
 }
 
 .ls-notification {
@@ -1144,7 +1141,7 @@
  }
  
  .ls-theme-custom .ls-topbar {
-     background-color: #656565
+     background-color: #656565;
  }
  
  .ls-theme-custom .ls-topbar .ls-alerts-list [class^="ls-ico"] {
@@ -1525,17 +1522,16 @@
      background: #f7f7f7
  }
  
- .ls-theme-custom .ls-tabs-nav:not(.in-dropdown) li {
+.ls-theme-custom .ls-tabs-nav:not(.in-dropdown) li {
      background-color: #464646;
-     background-color: rgba(64, 40, 42, 0.7)
  }
  
  .ls-theme-custom .ls-tabs-nav:not(.in-dropdown) li:hover {
-     background-color: #464646
+     background-color: #313131;
  }
  
  .ls-theme-custom .ls-tabs-nav:not(.in-dropdown) li.ls-active {
-     background-color: white
+     background-color: white;
  }
  
  .ls-theme-custom .ls-lnk-nav:hover {
@@ -1737,6 +1733,11 @@
      font-size: 14px !important
  }
  
+ .ls-alert-warning ul,
+ .ls-alert-danger ul{
+     margin: 1em 0em 0em 1em;
+ }
+
  .ls-lg-space,
  .ls-no-notification-message {
      padding: 40px !important
@@ -2857,16 +2858,16 @@
  
  @font-face {
      font-family: "locastyle";
-     src: url("fonts/locastyle.eot?-luxi4q");
-     src: url("fonts/locastyle.eot?#iefix-luxi4q") format("embedded-opentype"), url("fonts/locastyle.woff?-luxi4q") format("woff"), url("fonts/locastyle.ttf?-luxi4q") format("truetype"), url("fonts/locastyle.svg?-luxi4q#locastyle") format("svg");
+     src: url("/fonts/locastyle.eot?-luxi4q");
+     src: url("/fonts/locastyle.eot?#iefix-luxi4q") format("embedded-opentype"), url("/fonts/locastyle.woff?-luxi4q") format("woff"), url("/fonts/locastyle.ttf?-luxi4q") format("truetype"), url("/fonts/locastyle.svg?-luxi4q#locastyle") format("svg");
      font-weight: normal;
      font-style: normal
  }
  
  @font-face {
      font-family: "locastyle-panel-icons";
-     src: url("fonts/locastyle-panel-icons.eot?-luxi4q");
-     src: url("fonts/locastyle-panel-icons.eot?#iefix-luxi4q") format("embedded-opentype"), url("fonts/locastyle-panel-icons.woff?-luxi4q") format("woff"), url("fonts/locastyle-panel-icons.ttf?-luxi4q") format("truetype"), url("fonts/locastyle-panel-icons.svg?-luxi4q#locastyle-panel-icons") format("svg");
+     src: url("/fonts/locastyle-panel-icons.eot?-luxi4q");
+     src: url("/fonts/locastyle-panel-icons.eot?#iefix-luxi4q") format("embedded-opentype"), url("/fonts/locastyle-panel-icons.woff?-luxi4q") format("woff"), url("/fonts/locastyle-panel-icons.ttf?-luxi4q") format("truetype"), url("/fonts/locastyle-panel-icons.svg?-luxi4q#locastyle-panel-icons") format("svg");
      font-weight: normal;
      font-style: normal
  }
@@ -3594,6 +3595,13 @@
  [class*="ls-title"] [class*="ls-btn"] {
      margin-top: 10px
  }
+
+ .ls-link {
+    color: #5a7f96;
+    text-decoration: underline;
+    font-size: 13px;
+    letter-spacing: 0.2px;
+ }
  
  .ls-title-1 {
      font-size: 28px
@@ -3988,9 +3996,9 @@
  }
  
  .ls-alert-success {
-     color: #388f39;
-     border-color: #7db67e;
-     background-color: #d7e8d7
+    color: #388f39;
+    border-color: #7db67e;
+    background-color: #d7e8d738;
  }
  
  .ls-alert-info {
@@ -4886,8 +4894,8 @@
  .bg-my-tickets,
  .bg-help-desk,
  .bg-statusblog {
-     background-image: url(../images/footer/sprite.png);
-     background-repeat: no-repeat
+    background-image: url(../images/footer/sprite.png);
+    background-repeat: no-repeat
  }
  
  .ls-footer-menu {
@@ -5266,6 +5274,10 @@
  textarea.ls-field-xs {
      font-size: 12px;
      padding: 2px 11px
+ }
+
+ input[type="color"] {
+    height: 44px;
  }
  
  .ls-input-text.ls-field-sm,
@@ -7158,7 +7170,7 @@
  
  [class*="ls-tag"] {
      display: inline-block;
-     padding: 4px;
+     padding: 5px;
      font-size: 10px !important;
      letter-spacing: 0.6px;
      font-weight: 400;
